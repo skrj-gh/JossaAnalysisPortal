@@ -33,7 +33,7 @@ def analytics(request):
     df = df[~(df['Opening_Rank'].str.endswith('P') | df['Closing_Rank'].str.endswith('P'))]
 
 
-    filtered_data_7 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2022)]
+    filtered_data_7 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2023)]
     
     filtered_data_7['Opening_Rank'] = pd.to_numeric(filtered_data_7['Opening_Rank'], errors='coerce')  # Convert Closing Rank to numeric type
     filtered_data_7 = filtered_data_7.groupby('Institute')['Opening_Rank'].min().reset_index()
@@ -56,7 +56,7 @@ def analytics(request):
 
         
 
-    filtered_data_8 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2022)]
+    filtered_data_8 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2023)]
     
     filtered_data_8['Closing_Rank'] = pd.to_numeric(filtered_data_8['Closing_Rank'], errors='coerce')  # Convert Closing Rank to numeric type
     filtered_data_8 = filtered_data_8.groupby('Institute')['Closing_Rank'].max().reset_index()
@@ -81,7 +81,7 @@ def analytics(request):
 
 
 
-    filtered_data_1 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Academic'] == 'Computer Science and Engineering (4 Years, Bachelor of Technology)') & (df['Gender'] == 'Gender-Neutral') & (pd.to_numeric(df['Closing_Rank'], errors='coerce') <= 2500) & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2022)]
+    filtered_data_1 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Academic'] == 'Computer Science and Engineering (4 Years, Bachelor of Technology)') & (df['Gender'] == 'Gender-Neutral') & (pd.to_numeric(df['Closing_Rank'], errors='coerce') <= 2500) & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2023)]
     filtered_data_1['Closing_Rank'] = pd.to_numeric(filtered_data_1['Closing_Rank'], errors='coerce')  # Convert Closing Rank to numeric type
     filtered_data_1 = filtered_data_1.sort_values('Closing_Rank')
     if filtered_data_1.empty:
@@ -100,7 +100,7 @@ def analytics(request):
 
 
 
-    filtered_data_2 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & ((df['Academic'] == 'Mathematics and Computing (4 Years, Bachelor of Technology)') | (df['Academic'] == 'Mathematics and Computing (4 Years, Bachelor of Science)')) & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2022)]
+    filtered_data_2 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & ((df['Academic'] == 'Mathematics and Computing (4 Years, Bachelor of Technology)') | (df['Academic'] == 'Mathematics and Computing (4 Years, Bachelor of Science)')) & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2023)]
     filtered_data_2['Closing_Rank'] = pd.to_numeric(filtered_data_2['Closing_Rank'], errors='coerce')  # Convert Closing Rank to numeric type
     filtered_data_2 = filtered_data_2.sort_values('Closing_Rank')
 
@@ -120,7 +120,7 @@ def analytics(request):
 
 
 
-    filtered_data_3 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Academic'] == 'Electrical Engineering (4 Years, Bachelor of Technology)') & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2022)]
+    filtered_data_3 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Academic'] == 'Electrical Engineering (4 Years, Bachelor of Technology)') & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2023)]
 
     filtered_data_3['Closing_Rank'] = pd.to_numeric(filtered_data_3['Closing_Rank'], errors='coerce')  # Convert Closing Rank to numeric type
     filtered_data_3 = filtered_data_3.sort_values('Closing_Rank')
@@ -141,7 +141,7 @@ def analytics(request):
 
 
 
-    filtered_data_4 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Academic'] == 'Mechanical Engineering (4 Years, Bachelor of Technology)') & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2022)]
+    filtered_data_4 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Academic'] == 'Mechanical Engineering (4 Years, Bachelor of Technology)') & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2023)]
 
     filtered_data_4['Closing_Rank'] = pd.to_numeric(filtered_data_4['Closing_Rank'], errors='coerce')  # Convert Closing Rank to numeric type
     filtered_data_4 = filtered_data_4.sort_values('Closing_Rank')
@@ -162,7 +162,7 @@ def analytics(request):
 
 
 
-    filtered_data_5 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Academic'] == 'Chemical Engineering (4 Years, Bachelor of Technology)') & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2022)]
+    filtered_data_5 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Academic'] == 'Chemical Engineering (4 Years, Bachelor of Technology)') & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2023)]
 
     filtered_data_5['Closing_Rank'] = pd.to_numeric(filtered_data_5['Closing_Rank'], errors='coerce')  # Convert Closing Rank to numeric type
     filtered_data_5 = filtered_data_5.sort_values('Closing_Rank')
@@ -183,7 +183,7 @@ def analytics(request):
 
 
 
-    filtered_data_6 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Academic'] == 'Civil Engineering (4 Years, Bachelor of Technology)') & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2022)]
+    filtered_data_6 = df[(df['Round'] == 6) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Academic'] == 'Civil Engineering (4 Years, Bachelor of Technology)') & (df['Gender'] == 'Gender-Neutral') & (df['Seat_Type'] == 'OPEN') & (df['Year'] == 2023)]
 
     filtered_data_6['Closing_Rank'] = pd.to_numeric(filtered_data_6['Closing_Rank'], errors='coerce')  # Convert Closing Rank to numeric type
     filtered_data_6 = filtered_data_6.sort_values('Closing_Rank')
