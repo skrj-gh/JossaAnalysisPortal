@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'analytics/main.css' %}">
+
+    {% if title %}
+        <title>{{title}}</title>
+    {% else %}
+        <title>JOSSA Analysis Portal</title>
+    {% endif %}
+</head>
+<body>
+    <nav>
+        <div class="nav_bar">
+            <div class="logo_div">
+                <a href="{% url 'home_page' %}">
+                    <img src="{% static 'analytics/jossa_logo.png' %}" alt="logo">
+                </a>
+            </div>
+            
+            <div class="nav_links">
+                <a href="{% url 'home_page' %}">Home</a>
+                <a href="{% url 'analytics' %}">Analytics</a>
+                <a href="{% url 'predictor' %}">Predictor</a>
+                <a href="{% url 'about' %}">About Us</a>
+            </div>
+        </div>
+    </nav>
+    <section class="contents">
+        {% block content %}{% endblock %}
+    </section>
+</body>
+</html>
