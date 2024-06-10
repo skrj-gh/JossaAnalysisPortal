@@ -9,7 +9,7 @@ def predictor(request):
         College = request.POST.get("College")
 
         # Load the cleaned data from the CSV file
-        df = pd.read_csv('ORCR_16_22_all.csv')
+        df = pd.read_csv('JOSSA_data.csv')
         df = df[~(df['Opening_Rank'].str.endswith('P') | df['Closing_Rank'].str.endswith('P'))]
 
         if College != "All":

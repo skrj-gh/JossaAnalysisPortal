@@ -1,50 +1,50 @@
 {% extends "analytics/base.html" %}
 {% block content %}
-    <h1>Trends</h1>
+    <h1>JOSSA Analytics</h1>
 
     <div id="graph-container">
         {% if error_message %}
-        <p>{{ error_message }}</p>
+            <p>{{ error_message }}</p>
         {% else %}
-        {% if graph1 %}
-        <h2>Closing Rank Trends of IITs in CSE</h2>
-        <img src="data:image/png;base64,{{ graph1 }}" alt="Trends Graph 1">
-        {% endif %}
+            {% if graph1 %}
+                <h2>Closing Rank Trends of IITs in CSE</h2>
+                <img src="data:image/png;base64,{{ graph1 }}" alt="Trends Graph 1">
+            {% endif %}
 
-        {% if graph4 %}
-        <h2>Closing Rank Trends of IITs in MNC</h2>
-        <img src="data:image/png;base64,{{ graph4 }}" alt="Trends Graph 4">
-        {% endif %}
+            {% if graph2 %}
+                <h2>Closing Rank Trends of IITs in MNC</h2>
+                <img src="data:image/png;base64,{{ graph2 }}" alt="Trends Graph 2">
+            {% endif %}
 
-        {% if graph5 %}
-        <h2>Closing Rank Trends of IITs in EEE</h2>
-        <img src="data:image/png;base64,{{ graph5 }}" alt="Trends Graph 5">
-        {% endif %}
+            {% if graph3 %}
+                <h2>Closing Rank Trends of IITs in EEE</h2>
+                <img src="data:image/png;base64,{{ graph3 }}" alt="Trends Graph 3">
+            {% endif %}
 
-        {% if graph6 %}
-        <h2>Closing Rank Trends of IITs in ME</h2>
-        <img src="data:image/png;base64,{{ graph6 }}" alt="Trends Graph 6">
-        {% endif %}
+            {% if graph4 %}
+                <h2>Closing Rank Trends of IITs in ME</h2>
+                <img src="data:image/png;base64,{{ graph4 }}" alt="Trends Graph 4">
+            {% endif %}
 
-        {% if graph7 %}
-        <h2>Closing Rank Trends of IITs in CE(Chemical)</h2>
-        <img src="data:image/png;base64,{{ graph7 }}" alt="Trends Graph 7">
-        {% endif %}
+            {% if graph5 %}
+                <h2>Closing Rank Trends of IITs in CE(Chemical)</h2>
+                <img src="data:image/png;base64,{{ graph5 }}" alt="Trends Graph 5">
+            {% endif %}
 
-        {% if graph8 %}
-        <h2>Closing Rank Trends of IITs in CB(CIVIL)</h2>
-        <img src="data:image/png;base64,{{ graph8 }}" alt="Trends Graph 8">
-        {% endif %}
+            {% if graph6 %}
+                <h2>Closing Rank Trends of IITs in CB(CIVIL)</h2>
+                <img src="data:image/png;base64,{{ graph6 }}" alt="Trends Graph 6">
+            {% endif %}
 
-        {% if graph2 %}
-        <h2>Institutes with Closing Rank Less than 8000</h2>
-        <img src="data:image/png;base64,{{ graph2 }}" alt="Trends Graph 2">
-        {% endif %}
+            {% if graph7 %}
+                <h2>Opening Rank Trends of IITs</h2>
+                <img src="data:image/png;base64,{{ graph7 }}" alt="Trends Graph 7">
+            {% endif %}
 
-        {% if graph3 %}
-        <h2>Institutes with Closing Rank Greater than 8000</h2>
-        <img src="data:image/png;base64,{{ graph3 }}" alt="Trends Graph 3">
-        {% endif %}
+            {% if graph8 %}
+                <h2>Closing Rank Trends of IITs</h2>
+                <img src="data:image/png;base64,{{ graph8 }}" alt="Trends Graph 8">
+            {% endif %}
 
         {% endif %}
     </div>
