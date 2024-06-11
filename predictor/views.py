@@ -7,6 +7,7 @@ def predictor(request):
         Seat_Type = request.POST.get("Seat_Type")
         Rank = float(request.POST.get("Rank"))
         College = request.POST.get("College")
+        Gender = request.POST.get("Gender")
 
         # Load the cleaned data from the CSV file
         df = pd.read_csv('JOSSA_data.csv')
@@ -18,7 +19,10 @@ def predictor(request):
         df['Closing_Rank'] = df['Closing_Rank'].astype(float)
 
         # Filter the data based on user inputs
-        filtered_data = df[(df['Seat_Type'] == Seat_Type) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Closing_Rank'] >= Rank ) & (df['Year'] == 2023) & (df['Round'] == 6)]
+        if(Gender=='All'):
+            filtered_data = df[(df['Seat_Type'] == Seat_Type) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Closing_Rank'] >= Rank ) & (df['Year'] == 2023) & (df['Round'] == 6)]
+        else:
+            filtered_data = df[(df['Seat_Type'] == Seat_Type) & (df['Gender'] == Gender) & (df['Institute'].str.startswith('Indian Institute of Technology')) & (df['Closing_Rank'] >= Rank ) & (df['Year'] == 2023) & (df['Round'] == 6)]
 
         # Sort the filtered data by Opening Rank
         filtered_data = filtered_data.sort_values('Closing_Rank')
