@@ -1,0 +1,154 @@
+/* main.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #007bff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar Styles */
+.nav_bar {
+    background-color: #343a40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav_bar .logo_div img {
+    height: 40px;
+}
+
+.nav_bar .nav_links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav_bar .nav_links a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form .form-label {
+    font-weight: bold;
+}
+
+form .form-control, form .form-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Home Page Styles */
+.home_detail {
+    margin-bottom: 30px;
+}
+
+.home_detail h2 {
+    margin-bottom: 10px;
+}
+
+.home_detail p {
+    margin-bottom: 10px;
+}
+
+.home_detail .btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home_detail .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Graph Container Styles */
+#graph-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#graph-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Error Message Styles */
+.error-message {
+    color: #dc3545;
+    font-weight: bold;
+}
