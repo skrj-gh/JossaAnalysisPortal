@@ -1,23 +1,21 @@
 {% extends "analytics/base.html" %}
+{% load static %}
 {% block content %}
     <section id="overview">
         <div class="home_detail">
             <h1>Welcome to JOSAA Analysis Portal</h1>
             <p>Explore and analyze data related to the Joint Seat Allocation Authority (JOSAA) for seat allocation in Indian
-            Institutes of Technology (IITs), National Institutes of Technology (NITs), and other participating institutes.
-            </p>
+            Institutes of Technology (IITs), National Institutes of Technology (NITs), and other participating institutes.</p>
         </div>
     </section>
-    
     <section id="predictions">
         <div class="home_detail">
             <h2>Predictions</h2>
             <p>Get access to predictive analysis tools that can forecast future seat allocations based on historical data and
                 various parameters.</p>
-            <a href="{% url 'predictor' %}" class="btn">Predictior</a>
+            <a href="{% url 'predictor' %}" class="btn">Predictor</a>
         </div>
     </section>
-    
     <section id="statistics">
         <div class="home_detail">
             <h2>JOSSA Analytics</h2>
@@ -26,16 +24,14 @@
             <a href="{% url 'analytics' %}" class="btn">Analytics Portal</a>
         </div>
     </section>
-    
-    <section id="About Us">
+    <section id="about_us">
         <div class="home_detail">
             <h2>About Us</h2>
             <p>Created with passion and dedication by our team, this project serves the vision of providing valuable insights, bringing you a seamless experience.</p>
             <a href="{% url 'about' %}" class="btn">About Us</a>
         </div>
     </section>
-
     <footer>
-    <p>&copy JOSAA Analysis Portal 2024.</p>
+        <p>&copy; JOSAA Analysis Portal 2024.</p>
     </footer>
 {% endblock content %}

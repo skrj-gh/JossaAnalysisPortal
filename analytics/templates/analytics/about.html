@@ -1,5 +1,29 @@
 {% extends "analytics/base.html" %}
+{% load static %}
 {% block content %}
     <h1>About Us</h1>
     
+    <div class="card-container">
+        <div class="card">
+            <img src="{% static 'analytics/jossa_logo.png' %}" alt="Person 1">
+            <h3>Person 1</h3>
+            <p>Role/Position</p>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+        <div class="card">
+            <img src="{% static 'analytics/jossa_logo.png' %}" alt="Person 2">
+            <h3>Person 2</h3>
+            <p>Role/Position</p>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+        <div class="card">
+            <img src="{% static 'analytics/jossa_logo.png' %}" alt="Person 3">
+            <h3>Person 3</h3>
+            <p>Role/Position</p>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+    </div>
 {% endblock content %}
