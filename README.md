@@ -20,7 +20,7 @@ The JOSAA Analysis Portal is a web-based application designed to analyze, visual
 
 The project aims to provide insights and predictions on seat allocations for various engineering institutions under the JOSAA framework. It involves:
 
-- **Phase 1**: Scraping and cleaning data using Beautiful Soup, NumPy, and Pandas.
+- **Phase 1**: Scraping and cleaning data using Beautiful Soup, NumPy, and Pandas.(The final scraping file is in the directory web_Scrapping_josaa)
 - **Phase 1½**: Conducting Exploratory Data Analysis (EDA) and creating visualizations.
 - **Phase 2**: Developing a backend with Django to process queries, manage the database, and display visualizations on a web page.
 
@@ -79,18 +79,22 @@ The project aims to provide insights and predictions on seat allocations for var
    python -m venv venv
    source venv/bin/activate   # On Windows use `venv\Scripts\activate`
    ```
+3. **Install Python setuptools**:
+   ```bash
+   pip install setuptools
+   ```
 
-3. **Install Dependencies**:
+4. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Apply Migrations**:
+5. **Apply Migrations**:
    ```bash
    python manage.py migrate
    ```
 
-5. **Load Initial Data**:
+6. **Load Initial Data**:
    Place your CSV files and ensure they are correctly referenced in the project.
 
 ## Running the Project
@@ -103,10 +107,14 @@ Navigate to `http://127.0.0.1:8000/` in your web browser to access the applicati
 
 ## Screenshots
 
-(Add screenshots of different pages of your project here)
+![image](https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/fa97927b-2404-4076-9fdf-a9975351d182)
+![image](https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/044f2e14-6fe4-48f2-a0c7-a01f77724518)
+![image](https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/fd1291e6-3ed7-441d-bd66-8eb517ade81b)
+![image](https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/36334cb1-d1d0-4de7-bda0-30ac55e2ff86)
 
 ## Video Demonstration
 
-(Add a link to your video demonstration here)
+https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/808e9bbc-0605-4c0c-b179-7f0768eace3a
+
 
 ---
