@@ -9,7 +9,6 @@ pandas==2.0.3
 
 # Data visualization dependencies
 matplotlib==3.7.1
-seaborn==0.12.2
 
 # To handle large CSV files efficiently
 pandas-profiling==3.3.0
