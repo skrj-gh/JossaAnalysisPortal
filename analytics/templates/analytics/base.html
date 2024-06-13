@@ -4,10 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'analytics/about.css' %}">
-    <link rel="stylesheet" href="{% static 'analytics/charts.css' %}">
-    <link rel="stylesheet" href="{% static 'analytics/home.css' %}">
-    <link rel="stylesheet" href="{% static 'predictor/predictor.css' %}">
     <link rel="stylesheet" href="{% static 'analytics/base.css' %}">
     {% if title %}
         <title>{{ title }}</title>
@@ -34,5 +30,8 @@
     <section class="contents">
         {% block content %}{% endblock %}
     </section>
+    <footer>
+        <p>&copy; JOSAA Analysis Portal 2024.</p>
+    </footer>
 </body>
 </html>

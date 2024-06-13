@@ -2,10 +2,11 @@
 {% load static %}
 {% block content %}
     <section id="overview">
-        <div class="home_detail">
+        <div class="overview_details">
             <h1>Welcome to JOSAA Analysis Portal</h1>
             <p>Explore and analyze data related to the Joint Seat Allocation Authority (JOSAA) for seat allocation in Indian
-            Institutes of Technology (IITs), National Institutes of Technology (NITs), and other participating institutes.</p>
+            Institutes of Technology (IITs),<br/>
+             National Institutes of Technology (NITs), and other participating institutes.</p>
         </div>
     </section>
     <section id="predictions">
@@ -31,7 +32,5 @@
             <a href="{% url 'about' %}" class="btn">About Us</a>
         </div>
     </section>
-    <footer>
-        <p>&copy; JOSAA Analysis Portal 2024.</p>
-    </footer>
+    
 {% endblock content %}

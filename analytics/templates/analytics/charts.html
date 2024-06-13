@@ -1,7 +1,9 @@
 {% extends "analytics/base.html" %}
 {% load static %}
 {% block content %}
-    <h1>JOSSA Analytics</h1>
+    <div class="analytics_heading"> 
+        <h1 >JOSSA Analytics</h1>
+    </div>
     <div id="graph-container">
         {% if error_message %}
             <p class="error-message">{{ error_message }}</p>
