@@ -1,3 +1,4 @@
+Here is the cleaned and organized text for your README file:
 
 ---
 
@@ -20,7 +21,7 @@ The JOSAA Analysis Portal is a web-based application designed to analyze, visual
 
 The project aims to provide insights and predictions on seat allocations for various engineering institutions under the JOSAA framework. It involves:
 
-- **Phase 1**: Scraping and cleaning data using Beautiful Soup, NumPy, and Pandas.(The final scraping file is in the directory web_Scrapping_josaa)
+- **Phase 1**: Scraping and cleaning data using Beautiful Soup, NumPy, and Pandas. (The final scraping file is in the directory `web_Scrapping_josaa`)
 - **Phase 1½**: Conducting Exploratory Data Analysis (EDA) and creating visualizations.
 - **Phase 2**: Developing a backend with Django to process queries, manage the database, and display visualizations on a web page.
 
@@ -78,6 +79,7 @@ The project aims to provide insights and predictions on seat allocations for var
    python -m venv venv
    source venv/bin/activate   # On Windows use `venv\Scripts\activate`
    ```
+
 3. **Install Python setuptools**:
    ```bash
    pip install setuptools
@@ -102,12 +104,6 @@ python manage.py runserver
 ```
 Navigate to `http://127.0.0.1:8000/` in your web browser to access the application.
 
-
-**Deployment Video**( facing difficulty ? **watch this video** : continue; )
-```bash
-https://youtu.be/aAf-nz4-P-s
-```
-
 ## Screenshots
 
 ![image](https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/fa97927b-2404-4076-9fdf-a9975351d182)
@@ -117,9 +113,12 @@ https://youtu.be/aAf-nz4-P-s
 
 ## Video Demonstration
 
+For a detailed walkthrough, watch the deployment video [here](https://youtu.be/aAf-nz4-P-s) (<--youtube video on deployment):
 
-https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/35141bc8-e194-4755-afb1-3d6fbb9854be
+
+https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/dda2713e-5675-46b0-ad63-bedb3afb480a
 
 
 
 ---
+
