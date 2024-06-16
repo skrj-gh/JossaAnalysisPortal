@@ -102,10 +102,11 @@ python manage.py runserver
 ```
 Navigate to `http://127.0.0.1:8000/` in your web browser to access the application.
 
-**Deployment**
-https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/39707e93-ee4c-49f2-8412-9d387d436750
 
-
+**Deployment Video**( facing difficulty ? **watch this video** : continue; )
+```bash
+https://youtu.be/aAf-nz4-P-s
+```
 
 ## Screenshots
 
@@ -117,7 +118,6 @@ https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/39707e93-ee4c-49
 ## Video Demonstration
 
 **Testing**
-https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/808e9bbc-0605-4c0c-b179-7f0768eace3a
-
+https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/ee6608c5-7baa-459c-b29c-d8b816b2e2b8
 
 ---
