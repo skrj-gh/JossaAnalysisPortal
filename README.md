@@ -110,7 +110,11 @@ Navigate to `http://127.0.0.1:8000/` in your web browser to access the applicati
 ![image](https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/36334cb1-d1d0-4de7-bda0-30ac55e2ff86)
 
 ## Video Demonstration
+1. **Deployment**
+https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/d365d9dc-d23c-4745-90e7-63b070a5168e
 
+
+2. **Testing**
 https://github.com/skrj-gh/JossaAnalysisPortal/assets/133494008/808e9bbc-0605-4c0c-b179-7f0768eace3a
 
 
