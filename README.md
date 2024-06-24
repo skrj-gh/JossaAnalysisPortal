@@ -1,5 +1,3 @@
-Here is the cleaned and organized text for your README file:
-
 ---
 
 # JOSAA Analysis Portal
